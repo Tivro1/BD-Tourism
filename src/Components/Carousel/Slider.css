@@ -1,0 +1,29 @@
+/* Fix for <li> elements in the carousel */
+.carousel .slider-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    height: auto; /* Ensure height is determined by the content */
+}
+
+/* Ensure <li> elements do not stretch */
+.carousel .slider .slide {
+    background: none; /* Remove default background */
+    height: auto; /* Let the content define the height */
+}
+
+/* Ensure the images fill their container */
+.slider-image {
+    width: 100%; /* Full width */
+    max-height: 400px; /* Set a max height */
+    object-fit: cover; /* Keep aspect ratio, fill the container */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
