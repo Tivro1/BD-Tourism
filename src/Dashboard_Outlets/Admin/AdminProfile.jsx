@@ -33,9 +33,9 @@ const AdminProfile = () => {
   }, [showMessage]);
 
   const [stories] = useStories();
-  const [guide,refetch] = useTourGuides();
+  const [guide] = useTourGuides();
   const [pkages] = usePackages();
-  const [users] = useUser();
+  const [users,refetch] = useUser();
   const [totalPayment] = usePayments();
 
   const totalPayments = totalPayment.reduce(
@@ -78,7 +78,7 @@ const AdminProfile = () => {
           showConfirmButton: false,
           timer: 1500,
         });
-        refetch();
+       refetch();
       } else {
         throw new Error("Failed to update profile");
       }

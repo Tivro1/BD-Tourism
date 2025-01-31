@@ -166,7 +166,7 @@ const BookingForm = ({ name, price }) => {
               Close
             </button>
            
-           <Link to="/my-bookings" className="block w-full p-3 bg-green-400 text-white font-semibold rounded-md hover:bg-green-600">Go to My Bookings</Link>
+           <Link to="/dashboard/mybooking" className="block w-full p-3 bg-green-400 text-white font-semibold rounded-md hover:bg-green-600">Go to My Bookings</Link>
           </div>
         </div>
       )}
